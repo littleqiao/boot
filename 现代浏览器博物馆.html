@@ -248,16 +248,18 @@
                     </div>
                 </div>
             </div>
-        <script>
+
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script> 
+         <script>
              $(document).ready(function(){
                 $("#demo-navbar .dropdown-menu a").click(function(){
                     var href = $(this).attr("href");
 
-                    $("#tab-list a[href='"+href+"']").tab("show");
+                    $("#tab-list a[href='" + href + "']").tab("show");
+                    
                 });
              });  
         </script>
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script> 
     </body>
 </html>
